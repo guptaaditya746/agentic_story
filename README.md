@@ -1,6 +1,7 @@
 ```markdown
 
 
+![image](https://github.com/user-attachments/assets/5dced5d8-68f0-4385-b0a8-abf83125e79f)
 
 # Agentic Story Pipeline
 
