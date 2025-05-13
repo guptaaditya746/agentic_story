@@ -1,6 +1,6 @@
 ```markdown
 
-![image](https://github.com/user-attachments/assets/8d5e0c61-dae6-40f9-9ae2-aa4e52a55807)
+
 
 # Agentic Story Pipeline
 
@@ -146,7 +146,7 @@ python3 modules/pipeline/run_pipeline.py
 This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 
 ```
-
+![image](https://github.com/user-attachments/assets/8d5e0c61-dae6-40f9-9ae2-aa4e52a55807)
 Save this as **`README.md`** at your project root. Feel free to adjust URLs, badge images, or any section to match your organization’s conventions.
 ```
 ### TODO
