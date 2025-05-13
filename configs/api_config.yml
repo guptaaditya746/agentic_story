@@ -1,0 +1,12 @@
+llm_api:
+  url: ${LLM_API_URL:-https://llm.srv.webis.de/api/chat}
+  model: ${LLM_MODEL:-default}
+  timeout: 60
+  stream: false
+
+generation:
+  max_tokens: 500         # default token budget
+  temperature: 0.7        # 0–1, controls randomness
+  top_p: 0.9              # nucleus sampling
+  frequency_penalty: 0.0  # discourage repetition
+  presence_penalty: 0.0   # encourage new topics
