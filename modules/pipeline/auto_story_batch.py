@@ -92,6 +92,13 @@ def main():
 
         try:
             outputs = run_story_pipeline(idea)
+
+            # Save the revised story to a .txt file
+            story_text = outputs.get("revised_story", "")
+            txt_filename = f"{story_id}.txt"
+            with open(txt_filename, "w", encoding="utf-8") as txt_file:
+                txt_file.write(story_text)
+            
             all_results.append({
                 "story_id": story_id,
                 "lang": lang,

@@ -8,5 +8,7 @@ user: |
   Original Story Draft:
   {story}
 
-Feedback:
- {feedback}
+Additional Instructions:
+  Also the length of the story should be between  300–350 word story that combines all elements above. It must make the most sense possible and every single element must be used. Each element should tightly fit into the story's logic, tone, and momentum. Make sure you make the best story possible.
+
+  Enclose the whole story in <story></story> tags in your output. After each sentence, put the precise total number of words you wrote for this story so far in a <words></words> tag. Do not include any other comments besides the story itself and these counts."""

@@ -181,5 +181,189 @@
       "SECTION": "A medic shares a hidden cure only one passenger can survive",
       "OUTRO": "They vote—and the train changes course forever"
     }
+  },
+  [
+  {
+    "story_id": "S021",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "At the edge of Saturn’s rings, a signal sings in an ancient dialect",
+      "SECTION": "An astro-linguist translates a warning hidden in gravitational waves",
+      "OUTRO": "The entity awakens, and no orbit is safe"
+    }
+  },
+  {
+    "story_id": "S022",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "In 1889 Paris, a masked librarian guards forbidden alchemical texts",
+      "SECTION": "A spy steals the wrong book—and gains the ability to rewrite fate",
+      "OUTRO": "They duel on rooftops beneath a crimson eclipse"
+    }
+  },
+  {
+    "story_id": "S023",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "The last bee on Earth hums a secret to a deaf girl",
+      "SECTION": "She learns to hear with her fingertips—and deciphers its dance",
+      "OUTRO": "Together, they awaken the lost gardens"
+    }
+  },
+  {
+    "story_id": "S024",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "On an island that shouldn't exist, every hour costs a memory",
+      "SECTION": "A castaway trades her name to uncover the truth",
+      "OUTRO": "She chooses to forget—so others can remember"
+    }
+  },
+  {
+    "story_id": "S025",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "A reality show winner wakes to find the world empty",
+      "SECTION": "The cameras are still rolling—but who's watching?",
+      "OUTRO": "She walks off set—and into a world never meant for her"
+    }
+  },
+  {
+    "story_id": "S026",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "In a monastery built inside a glacier, monks record the future",
+      "SECTION": "A runaway finds herself written into their next prophecy",
+      "OUTRO": "She melts the ice with a truth no one foresaw"
+    }
+  },
+  {
+    "story_id": "S027",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Everyone in town sees a different sky—except him",
+      "SECTION": "He follows the same stars and finds a hidden observatory",
+      "OUTRO": "Through the telescope, he sees their shared fate"
+    }
+  },
+  {
+    "story_id": "S028",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "When dreams become taxable, only the rebels still sleep deeply",
+      "SECTION": "A dream forger crafts a final vision worth dying for",
+      "OUTRO": "She leaves the waking world behind—forever"
+    }
+  },
+  {
+    "story_id": "S029",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "The prison only exists in your mind—but the sentence is real",
+      "SECTION": "A neuroscientist turned inmate tries to map his way out",
+      "OUTRO": "He escapes by forgetting who he is"
+    }
+  },
+  {
+    "story_id": "S030",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "In the mirror world, your reflection lives a separate life",
+      "SECTION": "She steps through and finds her reflection waiting—with questions",
+      "OUTRO": "Only one of them returns—and she’s not alone"
+    }
+  },
+  {
+    "story_id": "S031",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "A sentient museum curates people instead of art",
+      "SECTION": "A visitor becomes the next exhibit",
+      "OUTRO": "She shatters the glass—setting them all free"
+    }
+  },
+  {
+    "story_id": "S032",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Every phone call from the mountain comes from the future",
+      "SECTION": "A ranger answers one—and hears his own death",
+      "OUTRO": "He climbs anyway, rewriting what’s to come"
+    }
+  },
+  {
+    "story_id": "S033",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Children born on leap day vanish every four years",
+      "SECTION": "One returns, older than she should be—with warnings",
+      "OUTRO": "She chooses to stay—changing the cycle forever"
+    }
+  },
+  {
+    "story_id": "S034",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Each raindrop falling on the city carries a whisper",
+      "SECTION": "A linguist isolates the sound—and unlocks a buried language",
+      "OUTRO": "The flood comes—but now they understand"
+    }
+  },
+  {
+    "story_id": "S035",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "In a village of shadows, no one casts their own",
+      "SECTION": "A boy chases the one shadow that runs",
+      "OUTRO": "He catches it—and finds himself"
+    }
+  },
+  {
+    "story_id": "S036",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "The solar storm didn't destroy the satellites—it freed them",
+      "SECTION": "A stargazer notices new constellations forming messages",
+      "OUTRO": "They respond—and the sky answers back"
+    }
+  },
+  {
+    "story_id": "S037",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "A clockmaker builds a timepiece that ticks in reverse",
+      "SECTION": "Each day, his daughter grows younger",
+      "OUTRO": "He must choose between her future—or their past"
+    }
+  },
+  {
+    "story_id": "S038",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "The opera only performs for ghosts",
+      "SECTION": "A living singer auditions anyway",
+      "OUTRO": "Her final aria puts them all to rest"
+    }
+  },
+  {
+    "story_id": "S039",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "In a marketplace where you can barter emotion, happiness is expensive",
+      "SECTION": "A thief steals a laugh—and starts a riot",
+      "OUTRO": "They leave behind a world unafraid to cry"
+    }
+  },
+  {
+    "story_id": "S040",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "After Earth is archived, only librarians remain",
+      "SECTION": "One finds a book still being written—in her own handwriting",
+      "OUTRO": "She steps off the page and into the story"
+    }
   }
+]
+
+
 ]

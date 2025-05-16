@@ -3,7 +3,7 @@
 ### TODO
 1. test the params pass to LLM , its behavious record [adi][in progress]
 2. create test case for workspace [rizvi]
-3. create some agentic diagram [adi][] 
+3. add workflow diagram in readme [adi][gemacht] 
 4. improve logging [rizvi]
 5. feedback and metric addition [adi][gemacht]
 5.1. add feedback which you are using under : agentic_story/tools/ [rizvi]
@@ -15,7 +15,9 @@
 
 ### Observations
 1. giving precise feedback works
-2. even though context widnow of llm (webis) is big, but for better quality it shoudl be under some limit (i dont know how to find this limit), so some form keyword or summarise agent in loop/in b/w agents , may work
+2. even though context widnow of llm (webis) is big, but for better quality it 
+shoudl be under some limit (i dont know how to find this limit), 
+so some form keyword or summarise agent in loop/in b/w agents , may work
 
 
 

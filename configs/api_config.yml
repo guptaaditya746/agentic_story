@@ -5,7 +5,7 @@ llm_api:
   stream: false
 
 generation:
-  max_tokens: 500         # default token budget
+  max_tokens: 350         # default token budget
   temperature: 0.7        # 0–1, controls randomness
   top_p: 0.9              # nucleus sampling
   frequency_penalty: 0.0  # discourage repetition
