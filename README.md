@@ -11,6 +11,7 @@
 6. use prompts_story.json to generate stories for analysis [adi][gemacht]
 7. add simple gui using Gradio for mock presentation [adi]
 8. add framework for prompts , add P2 (check google sheets) [adi]
+9. add benchmarking [adi]
 
 ### Observations
 1. giving precise feedback works
