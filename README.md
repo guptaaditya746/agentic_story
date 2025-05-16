@@ -1,7 +1,22 @@
 ```markdown
 
+### TODO
+1. test the params pass to LLM , its behavious record [adi][in progress]
+2. create test case for workspace [rizvi]
+3. create some agentic diagram [adi][] 
+4. improve logging [rizvi]
+5. feedback and metric addition [adi][gemacht]
+5.1. add feedback which you are using under : agentic_story/tools/ [rizvi]
+5.2. add TACCO and SEANCE, different python versions [adi]
+6. use prompts_story.json to generate stories for analysis [adi][gemacht]
+7. add simple gui using Gradio for mock presentation [adi]
+8. add framework for prompts , add P2 (check google sheets) [adi]
 
-![image](https://github.com/user-attachments/assets/5dced5d8-68f0-4385-b0a8-abf83125e79f)
+### Observations
+1. giving precise feedback works
+2. even though context widnow of llm (webis) is big, but for better quality it shoudl be under some limit (i dont know how to find this limit), so some form keyword or summarise agent in loop/in b/w agents , may work
+
+
 
 # Agentic Story Pipeline
 
@@ -9,7 +24,7 @@ A modular, agent-based pipeline for interactive story generation with human–LL
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Modular Agents**  
   - Outline → Background → Persona → Plot → Feedback → Revision → Synthesis → Verification  
@@ -33,7 +48,7 @@ A modular, agent-based pipeline for interactive story generation with human–LL
 
 ---
 
-## 🗂️ Folder Structure
+##  Folder Structure
 
 ```
 
@@ -56,7 +71,7 @@ agentic\_story/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 1. **Clone the repo**  
    ```bash
@@ -77,6 +92,11 @@ agentic\_story/
    pip install --upgrade pip
    pip install -r requirements.txt
    ```
+
+---
+Image
+!(Agentic Story Diagram-Page-7.drawio.png)
+
 
 ---
 
@@ -102,7 +122,7 @@ agentic\_story/
 
 ---
 
-## ▶️ Usage
+## ▶ Usage
 
 Run the full interactive pipeline:
 
@@ -121,7 +141,7 @@ python3 modules/pipeline/run_pipeline.py
 
 ---
 
-## ✅ Testing & CI
+##  Testing & CI  (TODO)
 
 * **Run tests locally**
 
@@ -134,25 +154,15 @@ python3 modules/pipeline/run_pipeline.py
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repo & create a feature branch.
 2. Add or update tests in `tests/`.
 3. Submit a PR with a clear description of your changes.
 
----
 
-## 📄 License
-
-This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 
 ```
 ![image](https://github.com/user-attachments/assets/8d5e0c61-dae6-40f9-9ae2-aa4e52a55807)
 Save this as **`README.md`** at your project root. Feel free to adjust URLs, badge images, or any section to match your organization’s conventions.
 ```
-### TODO
-test the params pass to LLM , its behavious record
-create test case for workspace
-create some agentic diagram
-improve logging
-feedback and metric addition

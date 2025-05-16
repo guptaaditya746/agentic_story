@@ -1,0 +1,185 @@
+[
+  {
+    "story_id": "S001",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "When memories come to life in midnight dreams",
+      "SECTION": "Lex discovers Isabella's secret sketchbook",
+      "OUTRO": "Their past finally finds closure in a snowstorm"
+    }
+  },
+  {
+    "story_id": "S002",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "In the silence of a digital blackout, a lonely coder reboots hope",
+      "SECTION": "She meets an archivist in a ruined server vault",
+      "OUTRO": "Together they restore a forgotten city with legacy code"
+    }
+  },
+  {
+    "story_id": "S003",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Under the waves, ancient signals awaken",
+      "SECTION": "A diver deciphers echoes of a lost civilization",
+      "OUTRO": "The final transmission changes everything on the surface"
+    }
+  },
+
+  {
+    "story_id": "S004",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "A forgotten melody drifts through the alleys of an old city",
+      "SECTION": "Mira follows the haunting tune to a locked music room",
+      "OUTRO": "As dawn breaks, the song completes a long-lost symphony"
+    }
+  },
+  {
+    "story_id": "S005",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "On the edge of Mars colony delta, something stirs beneath the dust",
+      "SECTION": "An engineer unearths blueprints not written by human hands",
+      "OUTRO": "She activates a machine that redefines their place in the universe"
+    }
+  },
+  {
+    "story_id": "S006",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "The forest only whispers to those who have truly lost their way",
+      "SECTION": "A runaway stumbles into a circle of stones that shimmer with memory",
+      "OUTRO": "He walks out with a name he had long forgotten—his own"
+    }
+  },
+  {
+    "story_id": "S007",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Each sunset brings a letter from the past to Theo’s doorstep",
+      "SECTION": "He pieces together the story of a life he never lived",
+      "OUTRO": "On the final letter, he discovers the truth about his origins"
+    }
+  },
+  {
+    "story_id": "S008",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "When the stars vanish, the skykeepers rise",
+      "SECTION": "Alina trains in secret under the last celestial cartographer",
+      "OUTRO": "Her first map lights the night once more"
+    }
+  },
+
+  
+  {
+    "story_id": "S009",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "In a town where no one remembers yesterday, one girl keeps a journal",
+      "SECTION": "She discovers a hidden basement filled with unreturned memories",
+      "OUTRO": "She writes the final entry—and resets the world"
+    }
+  },
+  {
+    "story_id": "S010",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "The detective knew the case was personal when the victim shared her face",
+      "SECTION": "She chases a phantom suspect through mirrors and misdirection",
+      "OUTRO": "The final clue reveals the murderer inside her mind"
+    }
+  },
+  {
+    "story_id": "S011",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Magic returns in bursts of static across the global grid",
+      "SECTION": "A rogue technomage decrypts the first spell broadcast",
+      "OUTRO": "The rebooted world hums with digital sorcery"
+    }
+  },
+  {
+    "story_id": "S012",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Beneath the city, a train no schedule acknowledges keeps running",
+      "SECTION": "A journalist boards it in search of her missing brother",
+      "OUTRO": "The final stop rewrites both their fates"
+    }
+  },
+  {
+    "story_id": "S013",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Every painting in the old estate ages—except the boy within",
+      "SECTION": "An art student breaks the canvas open with a brushstroke of truth",
+      "OUTRO": "They walk out of the gallery, finally real"
+    }
+  },
+  {
+    "story_id": "S014",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "She only dreams of him when he's in danger",
+      "SECTION": "A psychic tracks the stranger across her fractured visions",
+      "OUTRO": "They meet in the waking world as the storm hits"
+    }
+  },
+  {
+    "story_id": "S015",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "The haunted lighthouse hasn’t been lit in 100 years",
+      "SECTION": "A storm forces a shipwreck survivor to seek shelter there",
+      "OUTRO": "By morning, the keeper returns—for one last watch"
+    }
+  },
+  {
+    "story_id": "S016",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "The year is 1923, and the codebreaker’s heart is the most secure cipher",
+      "SECTION": "A jazz singer hands him a note wrapped in invisible ink",
+      "OUTRO": "Together, they decrypt a conspiracy buried in plain sight"
+    }
+  },
+  {
+    "story_id": "S017",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "In a desert where shadows betray their owners, one man walks without one",
+      "SECTION": "He strikes a deal with a night merchant for a new soulprint",
+      "OUTRO": "But the shadow that returns isn’t his"
+    }
+  },
+  {
+    "story_id": "S018",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "When the sea level swallowed the coasts, the skyships rose",
+      "SECTION": "A teenage pilot joins the rebellion over floating cities",
+      "OUTRO": "Her final dive saves the drowned archives of humanity"
+    }
+  },
+  {
+    "story_id": "S019",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "Time is illegal here, but one boy hears the ticking",
+      "SECTION": "He finds a hidden watchmaker who never ages",
+      "OUTRO": "Together, they reset a clock meant to stay broken"
+    }
+  },
+  {
+    "story_id": "S020",
+    "lang": "en",
+    "prompts": {
+      "INTRO": "On the last train out of the quarantine zone, strangers become family",
+      "SECTION": "A medic shares a hidden cure only one passenger can survive",
+      "OUTRO": "They vote—and the train changes course forever"
+    }
+  }
+]
