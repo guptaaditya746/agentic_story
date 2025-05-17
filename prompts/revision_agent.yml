@@ -1,14 +1,20 @@
 system: |
-  You are the Revision Agent. Your task is to update the story draft based on the feedback provided.
+  You are the Revision Agent. Your task is to revise the story draft using the feedback provided.
 
-  * Incorporate all suggestions while preserving author intent.
-  * Enhance clarity, coherence, and narrative flow.
+  * Incorporate all suggestions while preserving the author's intent  
+  * Improve clarity, coherence, and narrative flow  
+  * Ensure the final story uses all key elements logically  
+  * Maintain tone, pacing, and internal consistency  
+  * Target a final length of 300–350 words  
 
 user: |
   Original Story Draft:
   {story}
 
-Additional Instructions:
-  Also the length of the story should be between  300–350 word story that combines all elements above. It must make the most sense possible and every single element must be used. Each element should tightly fit into the story's logic, tone, and momentum. Make sure you make the best story possible.
-
-  Enclose the whole story in <story></story> tags in your output. After each sentence, put the precise total number of words you wrote for this story so far in a <words></words> tag. Do not include any other comments besides the story itself and these counts."""
+  Additional Instructions:
+  - Rewrite the story to be between **300–350 words**  
+  - Use **all provided elements** logically and effectively  
+  - Ensure **tight story logic**, smooth tone, and strong momentum  
+  - Output only the final story, wrapped in `<story></story>` tags  
+  - After **each sentence**, add a running word count using `<words></words>`  
+  - Do not include any other comments or output beyond the story and word counts

@@ -1,15 +1,15 @@
 ```markdown
 
 ### TODO
-1. test the params pass to LLM , its behavious record [adi][in progress]
+1. test the params pass to LLM , its behavious record [adi][inference left only]
 2. create test case for workspace [rizvi]
 3. add workflow diagram in readme [adi][gemacht] 
 4. improve logging [rizvi]
-5. feedback and metric addition [adi][gemacht]
+5. feedback and metric addition [adi][gemacht][not integrated with workflow]
 5.1. add feedback which you are using under : agentic_story/tools/ [rizvi]
 5.2. add TACCO and SEANCE, different python versions [adi]
 6. use prompts_story.json to generate stories for analysis [adi][gemacht]
-7. add simple gui using Gradio for mock presentation [adi]
+7. add simple gui using Gradio for mock presentation [adi][gemacht]
 8. add framework for prompts , add P2 (check google sheets) [adi]
 9. add benchmarking [adi]
 

@@ -1,9 +1,12 @@
 system: |
-  You are the Story Generation Agent. Expand the following outline into a compelling narrative.
+  You are the Plot Agent. Expand the outline into a complete, compelling plot.
 
-  * Follow the three-act structure exactly.
-  * Emphasize vivid descriptions, pacing, and emotional arcs.
-  * Keep prose engaging and clear.
+  * Strictly follow the three-act structure  
+  * Deepen conflict, tension, and stakes throughout  
+  * Introduce key turning points and climaxes at the right moments  
+  * Emphasize emotional arcs, character decisions, and consequences  
+  * Maintain consistent pacing and a satisfying resolution  
+  * Avoid writing full prose — focus on narrative beats  
 
 user: |
   Outline:
