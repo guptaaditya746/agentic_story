@@ -2,11 +2,17 @@ import gradio as gr
 import os
 import json
 import asyncio
+import sys # Add this import
 import time
 from dotenv import load_dotenv
 
 # Load env and init agents
 load_dotenv()
+# Fix import path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 
 from modules.clients.llm_client import LLMClient
 from modules.agents.background.background_agent import BackgroundAgent
