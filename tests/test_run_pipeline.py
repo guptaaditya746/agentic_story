@@ -1,4 +1,6 @@
+import os
 import pytest
+import yaml
 from unittest.mock import MagicMock, patch
 
 from modules.agents.background.background_agent import BackgroundAgent
@@ -10,12 +12,18 @@ from modules.agents.feedback.feedback_agent import FeedbackAgent
 from modules.agents.revision.revision_agent import RevisionAgent
 from modules.agents.verification.verification_agent import VerificationAgent
 
+# Load the existing api_config.yml file
+@pytest.fixture
+def api_config():
+    config_path = os.path.join(os.path.dirname(__file__), "..", "configs", "api_config.yml")
+    assert os.path.exists(config_path), f"Config file not found at: {config_path}"
+    return config_path
+
 
 @pytest.fixture
 def mock_llmclient_send():
     with patch('modules.clients.llm_client.LLMClient.send') as mock_send:
         yield mock_send
-
 
 def test_background_agent_generate_background(mock_llmclient_send):
     mock_llmclient_send.return_value = "Background text about a dark forest."
@@ -24,14 +32,12 @@ def test_background_agent_generate_background(mock_llmclient_send):
     assert isinstance(result, str)
     assert "dark forest" in result or len(result) > 0
 
-
 def test_persona_agent_generate_personas(mock_llmclient_send):
     mock_llmclient_send.return_value = "Character profiles: Alice, the brave heroine."
     agent = PersonaAgent()
     result = agent.generate_personas("A haunted forest story")
     assert isinstance(result, str)
     assert "Alice" in result
-
 
 def test_outline_agent_generate_outline(mock_llmclient_send):
     mock_llmclient_send.return_value = "Act 1: Setup\nAct 2: Conflict\nAct 3: Resolution"
@@ -40,14 +46,12 @@ def test_outline_agent_generate_outline(mock_llmclient_send):
     assert isinstance(result, str)
     assert "Act 1" in result
 
-
 def test_synthesis_agent_synthesize(mock_llmclient_send):
     mock_llmclient_send.return_value = "Synthesized draft combining background, personas, and outline."
     agent = SynthesisAgent()
     result = agent.synthesize("Background text", "Personas text", "Outline text")
     assert isinstance(result, str)
     assert "Synthesized" in result
-
 
 def test_plot_agent_expand_outline(mock_llmclient_send):
     mock_llmclient_send.return_value = "Full narrative draft expanding the outline."
@@ -56,14 +60,12 @@ def test_plot_agent_expand_outline(mock_llmclient_send):
     assert isinstance(result, str)
     assert "narrative" in result
 
-
 def test_feedback_agent_get_llm_feedback(mock_llmclient_send):
     mock_llmclient_send.return_value = "LLM feedback: The story could be more exciting."
     agent = FeedbackAgent()
     result = agent.get_llm_feedback("Draft story text")
     assert isinstance(result, str)
     assert "exciting" in result
-
 
 def test_revision_agent_revise_story(mock_llmclient_send):
     mock_llmclient_send.return_value = "Revised story incorporating feedback."
@@ -72,7 +74,6 @@ def test_revision_agent_revise_story(mock_llmclient_send):
     assert isinstance(result, str)
     assert "Revised" in result
 
-
 def test_verification_agent_verify(mock_llmclient_send):
     mock_llmclient_send.return_value = "Verification report: No plot holes found."
     agent = VerificationAgent()
@@ -80,25 +81,21 @@ def test_verification_agent_verify(mock_llmclient_send):
     assert isinstance(result, str)
     assert "No plot holes" in result
 
-
 def test_feedback_agent_get_human_feedback(monkeypatch):
     inputs = iter([
         "Great story, but needs more action.",
         "Consider adding a new character.",
         "END"
     ])
-
     monkeypatch.setattr('builtins.input', lambda: next(inputs))
-
     agent = FeedbackAgent()
     feedback = agent.get_human_feedback()
     assert "Great story" in feedback
     assert "new character" in feedback
     assert "END" not in feedback
 
-
 @pytest.mark.integration
-def test_full_pipeline_run(mock_llmclient_send, monkeypatch):
+def test_full_pipeline_run(mock_llmclient_send, monkeypatch, api_config):
     """
     Integration test simulating a full pipeline run.
     Each call to LLMClient.send returns a different canned response.
@@ -114,19 +111,10 @@ def test_full_pipeline_run(mock_llmclient_send, monkeypatch):
         'verification': "Verification: Story is consistent."
     }
 
-    # side_effect to return responses in order of calls
-    mock_llmclient_send.side_effect = [
-        responses['background'],
-        responses['personas'],
-        responses['outline'],
-        responses['synthesis'],
-        responses['plot'],
-        responses['feedback'],
-        responses['revision'],
-        responses['verification']
-    ]
+    # Set side_effect to return responses in order of calls
+    mock_llmclient_send.side_effect = list(responses.values())
 
-    # Monkeypatch human feedback input to simulate user typing feedback and ending with END
+    # Monkeypatch human feedback input
     human_feedback_inputs = iter([
         "Add more vivid descriptions.",
         "END"
@@ -145,7 +133,6 @@ def test_full_pipeline_run(mock_llmclient_send, monkeypatch):
 
     # Simulate pipeline
     idea = "A haunted forest story"
-
     background = background_agent.generate_background(idea)
     personas = persona_agent.generate_personas(idea)
     outline = outline_agent.generate_outline(idea)
@@ -167,3 +154,5 @@ def test_full_pipeline_run(mock_llmclient_send, monkeypatch):
     assert "Add more vivid descriptions." in human_feedback
     assert revised_story == responses['revision']
     assert verification_report == responses['verification']
+
+    print("✅ Integration test passed: Full pipeline run.")
