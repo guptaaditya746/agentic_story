@@ -88,7 +88,7 @@ async def run_stepwise_story_pipeline(idea, genre, tone, audience, uploaded_back
         return "", "", "", "", "", "", "", "", "", "", "\n".join(errors)
 
 with gr.Blocks(title="Interactive Story Generator") as demo:
-    gr.Markdown("# 📝 Interactive Story Generator")
+    gr.Markdown("#  Interactive Story Generator")
 
     with gr.Row():
         idea = gr.Textbox(label="Story Idea", placeholder="e.g., A robot discovers emotions", lines=2)
@@ -100,39 +100,39 @@ with gr.Blocks(title="Interactive Story Generator") as demo:
         uploaded_background = gr.Textbox(label="Custom Background", lines=6, placeholder="Paste background text...")
         uploaded_personas = gr.Textbox(label="Custom Personas", lines=6, placeholder="Paste character profiles...")
 
-    with gr.Accordion("⚙️ Generation Settings", open=False):
+    with gr.Accordion(" Generation Settings", open=False):
         max_tokens = gr.Slider(100, 1000, value=350, step=50, label="Max Tokens")
         temperature = gr.Slider(0.0, 1.0, value=0.7, step=0.05, label="Temperature")
         top_p = gr.Slider(0.1, 1.0, value=0.9, step=0.05, label="Top-p")
         freq_penalty = gr.Slider(0.0, 2.0, value=0.0, step=0.1, label="Frequency Penalty")
         pres_penalty = gr.Slider(0.0, 2.0, value=0.0, step=0.1, label="Presence Penalty")
 
-    human_feedback_text = gr.Textbox(label="✍️ Human Feedback", placeholder="Your comments on the draft", lines=4)
+    human_feedback_text = gr.Textbox(label=" Human Feedback", placeholder="Your comments on the draft", lines=4)
 
     with gr.Row():
-        run_button = gr.Button("🚀 Generate Story")
+        run_button = gr.Button(" Generate Story")
 
     with gr.Tabs():
-        with gr.Tab("🌆 Background"):
+        with gr.Tab(" Background"):
             out_background = gr.Textbox(label="Generated Background", lines=10)
-        with gr.Tab("👤 Personas"):
+        with gr.Tab(" Personas"):
             out_personas = gr.Textbox(label="Generated Personas", lines=10)
-        with gr.Tab("🖼 Outline"):
+        with gr.Tab(" Outline"):
             out_outline = gr.Textbox(label="Outline", lines=10)
-        with gr.Tab("🔗 Enriched Outline"):
+        with gr.Tab(" Enriched Outline"):
             out_enriched = gr.Textbox(label="Enriched Outline", lines=10)
-        with gr.Tab("📖 Draft"):
+        with gr.Tab(" Draft"):
             out_draft = gr.Textbox(label="First Draft", lines=12)
-        with gr.Tab("🤖 LLM Feedback"):
+        with gr.Tab(" LLM Feedback"):
             out_llm_feedback = gr.Textbox(label="LLM Feedback", lines=10)
-        with gr.Tab("✂️ Revised Story"):
+        with gr.Tab(" Revised Story"):
             out_revised = gr.Textbox(label="Revised Story", lines=12)
-        with gr.Tab("✅ Verification Report"):
+        with gr.Tab(" Verification Report"):
             out_verification = gr.Textbox(label="Verification Report", lines=8)
 
-    story_file = gr.File(label="📥 Download Final Story")
-    timing_report = gr.Textbox(label="⏱️ Execution Time by Step", lines=8)
-    error_output = gr.Textbox(label="❌ Errors (if any)", lines=4)
+    story_file = gr.File(label=" Download Final Story")
+    timing_report = gr.Textbox(label=" Execution Time by Step", lines=8)
+    error_output = gr.Textbox(label=" Errors (if any)", lines=4)
 
     run_button.click(
         fn=run_stepwise_story_pipeline,

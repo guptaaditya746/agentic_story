@@ -85,41 +85,41 @@ def main():
     revision_agent     = RevisionAgent(client)
     verification_agent = VerificationAgent(client)
 
-    idea = input("📝  Enter your story idea: ").strip()
+    idea = input("  Enter your story idea: ").strip()
 
     # 1) Background
     print("\n[1] Generating Background…")
     background = background_agent.generate_background(idea)
-    background = prompt_edit("🌆 Background (setting, mood, context):", background)
+    background = prompt_edit(" Background (setting, mood, context):", background)
 
     # 2) Personas
     print("\n[2] Generating Personas…")
     personas = persona_agent.generate_personas(idea)
-    personas = prompt_edit("👤 Personas (characters, arcs, conflicts):", personas)
+    personas = prompt_edit(" Personas (characters, arcs, conflicts):", personas)
 
     # 3) Outline
     print("\n[3] Generating Outline…")
     outline = outline_agent.generate_outline(idea)
-    outline = prompt_edit("🖼 Outline (3-act structure & key beats):", outline)
+    outline = prompt_edit(" Outline (3-act structure & key beats):", outline)
 
     # 4) Synthesis
     print("\n[4] Synthesizing Enriched Outline…")
     enriched_outline = synthesis_agent.synthesize(background, personas, outline)
-    enriched_outline = prompt_edit("🔗 Enriched Outline (integrated world, characters, plot):", enriched_outline)
+    enriched_outline = prompt_edit(" Enriched Outline (integrated world, characters, plot):", enriched_outline)
 
     # 5) Draft
     print("\n[5] Expanding Outline to Draft…")
     draft = plot_agent.expand_outline(enriched_outline)
-    draft = prompt_edit("📖 First Draft (full narrative):", draft)
+    draft = prompt_edit(" First Draft (full narrative):", draft)
 
     # 6) LLM Feedback
     print("\n[6] Gathering LLM Feedback…")
     llm_feedback = feedback_agent.get_llm_feedback(draft)
-    print("\n🤖 LLM Feedback:\n")
+    print("\n LLM Feedback:\n")
     print(llm_feedback)
 
     # 7) Human Feedback
-    print("\n✍️  Enter your own feedback (type ‘END’ on its own line to finish):")
+    print("\n  Enter your own feedback (type ‘END’ on its own line to finish):")
     human_lines = []
     while True:
         line = input()
@@ -138,20 +138,20 @@ def main():
     # 9) Verification
     print("\n[8] Verifying Revised Story…")
     report = verification_agent.verify(revised)
-    report = prompt_edit("✅ Verification Report (accept or adjust):", report)
+    report = prompt_edit(" Verification Report (accept or adjust):", report)
 
     # Final Output
-    print("\n🎉 === Final Story ===\n")
+    print("\n === Final Story ===\n")
     print(revised)
 
     # Save the final story as JSON
     with open("final_story.json", "w") as f:
         json.dump({"story": revised}, f, indent=4)
-    print("\n💾 Final story saved to final_story.json")
+    print("\n Final story saved to final_story.json")
 
 if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n👋 Exiting pipeline.")
+        print("\n Exiting pipeline.")
         sys.exit(0)
