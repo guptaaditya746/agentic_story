@@ -1,3 +1,4 @@
 /.agentic_story_venv
 *.txt
 /.venv
+*.pyc
