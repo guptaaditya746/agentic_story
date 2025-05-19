@@ -1,1 +1,7 @@
 PyYAML
+pytest
+pytest-mock
+requests-mock
+python-dotenv
+pyyaml
+gradio

@@ -1,0 +1,12 @@
+llm_api:
+  url: http://test-api.local
+  model: test-model
+  timeout: 60
+  stream: false
+
+generation:
+  max_tokens: 50
+  temperature: 0.5
+  top_p: 0.8
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
